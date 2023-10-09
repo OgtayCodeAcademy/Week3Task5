@@ -1,0 +1,16 @@
+@keyframes AboutAnimation {
+    0% {
+      transform: scale(0.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@keyframes ChooseScale{
+    0%{
+        transform: scale(0.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

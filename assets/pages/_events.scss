@@ -1,0 +1,115 @@
+body{
+    width: 100%;
+    height: 100vh;
+}
+main .tittle {
+    width: 100%;
+    background-color: $primary-color;
+    height: 200px;
+    padding-top: 100px;
+
+    .row {
+        .col-12 {
+            text-align: center;
+
+            h1 {
+                font-size: 32px;
+                font-family: $secondary-font, sans-serif;
+                color: white;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: $open-san-bold, sans-serif;
+                color: rgb(216, 211, 211);
+            }
+        }
+    }
+}
+
+main .container .row .col-6 {
+    padding: 0px 20px;
+    height: 600px;
+    margin-top: 60px;
+
+    .event {
+        width: 100%;
+        height: 90%;
+
+        &:hover .box {
+            border-top: 5px solid green;
+        }
+
+        &:hover .image-wrapper{
+            background-size: 130%;
+        }
+
+        &:hover h1 {
+            color: $primary-color;
+        }
+
+        .image-wrapper {
+            width: 100%;
+            overflow: hidden;
+            height: 350px;
+            background-image: url(../../Media/images/events-1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .box {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 85%;
+        height: 250px;
+        text-align: center;
+        margin-top: -80px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 0.2s;
+
+        h1 {
+            font-size: 20px;
+            font-family: $secondary-font, sans-serif;
+            color: #37423B;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: 0.5s;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-family: $about-tittle-font-italic, sans-serif;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: $open-san-bold, sans-serif;
+            margin-top: 20px;
+        }
+    }
+}
+
+main .container .row .col-6 {
+    .event {
+        &:hover .image-wrapper-2{
+            background-size: 130%;
+        }
+        .image-wrapper-2{
+            width: 100%;
+            overflow: hidden;
+            height: 350px;
+            background-image: url(../../Media/images/events-2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+@media only screen and (max-width: 992px){
+    main .tittle{
+        height: 350px;
+        padding-top: 150px;
+    }
+}
